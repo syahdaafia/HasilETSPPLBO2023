@@ -20,7 +20,6 @@ public class DeliveryService {
     public void createDelivery(DeliveryRequest deliveryRequest) {
         Delivery delivery = Delivery.builder()
                 .courier(deliveryRequest.getCourier())
-                .eta(deliveryRequest.getEta())
                 .plat(deliveryRequest.getPlat())
                 .status(deliveryRequest.getStatus())
                 .build();
@@ -39,7 +38,6 @@ public class DeliveryService {
         return DeliveryResponse.builder()
                 .id(delivery.getId())
                 .courier(delivery.getCourier())
-                .eta(delivery.getEta())
                 .plat(delivery.getPlat())
                 .status(delivery.getStatus())
                 .build();

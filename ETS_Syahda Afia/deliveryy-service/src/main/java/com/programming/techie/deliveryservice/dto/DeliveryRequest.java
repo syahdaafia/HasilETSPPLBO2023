@@ -12,7 +12,6 @@ import lombok.NoArgsConstructor;
 
 public class DeliveryRequest {
     private String courier;
-    private String eta;
     private String plat;
     private String status;
 }

@@ -19,7 +19,6 @@ public class Delivery {
     @Id
     private String id;
     private String courier;
-    private String eta;
     private String plat;
     private String status;
 }
