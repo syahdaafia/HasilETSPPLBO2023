@@ -22,6 +22,9 @@
         <module>discovery-server</module>
         <module>api-gateway</module>
         <module>consumer-service</module>
+        <module>payment-service</module>
+        <module>delivery-service</module>
+        <module>deliveryy-service</module>
     </modules>
 
     <properties>
