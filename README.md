@@ -55,6 +55,9 @@ Bertanggung jawab untuk mengelola dan menyediakan daftar produk-produk yang diju
 - [x] Menyediakan informasi persediaan produk, seperti jumlah produk yang tersedia, dan kapan produk tersebut akan tersedia lagi  
 - [x] Menyediakan API untuk membuat, mengubah, atau menghapus produk  
 
+## Service Architecture  
+<img width="431" alt="image" src="https://github.com/syahdaafia/HasilETSPPLBO2023/assets/76998317/ebb5dcfc-859f-470d-8603-e0c7914eea57">  
+
 ## Design Pattern Used  
 **Problem**  
 Biasanya 1 client membutuhkan data dari beberapa service dan client tersebut menghubungi service-service tersebut secara langsung. Ini membutuhkan biaya yang mahal.
