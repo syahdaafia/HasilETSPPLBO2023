@@ -11,7 +11,7 @@ Kelas : D4-3A
 - MySQL
 
 ## Prequisites
-[x] Java JDK 17  
+-[x] Java JDK 17  
 [x] MongoDB  
 [x] MySQL
 [x] Intellij IDE
