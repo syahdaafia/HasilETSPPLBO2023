@@ -82,3 +82,8 @@ Menggunakan API Composition. API Composition merupakan pattern yang membuat clie
 **API Composition**  
 API Composition diterapkan di order service dikarenakan pada order service sering dilakukan query untuk mencari pemesanan yang biasanya menggunakan findOrder() query. findOrder() query akan mengembalikan OrderDetails yang berisi order id, nama cafe, delivery status, estimasi kedatangan, dan payment status. Untuk mendapat data tersebut, tentunya kita perlu data-data dari berbagai service yang berbeda. Maka dari itu, API composition merupakan pattern yang tepat untuk order service. Nantinya, akan ditempatkan sebuah composer di depan service-service yang memiliki data yang dibutuhkan. Client hanya perlu melakukan request kepada composer tersebut dan nantinya composer tersebut lah yang akan mengambil data dari berbagai service, menggabungkannya, dan mengembalikannya ke client.
 
+**Arsitektur Penerapan API Composition**  
+<img width="469" alt="image" src="https://github.com/syahdaafia/HasilETSPPLBO2023/assets/76998317/2b31998a-d143-46a1-9a44-464a802d0a4b">
+
+
+
