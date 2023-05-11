@@ -26,7 +26,7 @@ Bertanggung jawab untuk menyimpan dan mengelola data consumer
 - [x] Mengelola informasi pelanggan  
 
 **Delivery Service**  
-Bertanggung jawab untuk menyimpan status pengiriman dari pemesanan yang dilakukan customer jika customer melakukan pemesanan _online _ 
+Bertanggung jawab untuk menyimpan status pengiriman dari pemesanan yang dilakukan customer jika customer melakukan pemesanan _online_   
 - [x] Memproses permintaan pengiriman pesanan
 - [x] Melacak pengiriman
 - [x] Menyediakan informasi kapan pesanan akan sampai
