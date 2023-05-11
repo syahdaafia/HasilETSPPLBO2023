@@ -16,6 +16,9 @@ Kelas : D4-3A
 - [x] MySQL
 - [x] Intellij IDE
 
+## API Documentation/Tester (Postman)
+
+
 ## Services
 **API Gateway**
 - [x] Mengelola interaksi antar endpoint
@@ -76,6 +79,6 @@ Biasanya 1 client membutuhkan data dari beberapa service dan client tersebut men
 **Solusi**  
 Menggunakan API Composition. API Composition merupakan pattern yang membuat client tidak harus menghubungi banyak service secara langsung, melainkan melalui request ke API Composer. API Composer ditempatkan di depan microservices.  
 
-**-- API Composition**  
+**API Composition**  
 API Composition diterapkan di order service dikarenakan pada order service sering dilakukan query untuk mencari pemesanan yang biasanya menggunakan findOrder() query. findOrder() query akan mengembalikan OrderDetails yang berisi order id, nama cafe, delivery status, estimasi kedatangan, dan payment status. Untuk mendapat data tersebut, tentunya kita perlu data-data dari berbagai service yang berbeda. Maka dari itu, API composition merupakan pattern yang tepat untuk order service. Nantinya, akan ditempatkan sebuah composer di depan service-service yang memiliki data yang dibutuhkan. Client hanya perlu melakukan request kepada composer tersebut dan nantinya composer tersebut lah yang akan mengambil data dari berbagai service, menggabungkannya, dan mengembalikannya ke client.
 
