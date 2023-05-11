@@ -2,8 +2,8 @@
 
 ## Food Ordering System on Microservices
 Nama  : Syahda Afia Dhiya Ulhaq Tajduin  
-NIM   : 201524030  
-Kelas : D4-3A  
+NIM $~~$ : 201524030  
+Kelas $~$ : D4-3A  
 
 ## Tech Stack
 - Spring Boot Java Framework
