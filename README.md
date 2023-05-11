@@ -33,7 +33,7 @@ Bertanggung jawab untuk menyimpan status pengiriman dari pemesanan yang dilakuka
 - [x] Menyediakan API untuk menerima permintaan pengiriman
 
 **Inventory Service**  
-Bertanggung jawaba untuk manajemen stok barang atau produk yang tersedia  
+Bertanggung jawab untuk manajemen stok barang atau produk yang tersedia  
 - [x] Memantau dan mengelola stok barang atau produk yang tersedia dalam sistem  
 - [x] Memastikan bahwa informasi produk yang ditampilkan dalam aplikasi pemesanan _online_ selalu akurat
 
@@ -54,4 +54,14 @@ Bertanggung jawab untuk mengelola dan menyediakan daftar produk-produk yang diju
 - [x] Menyediakan informasi produk, seperti nama, harga, gambar, dan deskripsi  
 - [x] Menyediakan informasi persediaan produk, seperti jumlah produk yang tersedia, dan kapan produk tersebut akan tersedia lagi  
 - [x] Menyediakan API untuk membuat, mengubah, atau menghapus produk  
+
+## Design Pattern Used  
+**Problem**  
+Biasanya 1 client membutuhkan data dari beberapa service dan client tersebut menghubungi service-service tersebut secara langsung. Ini membutuhkan biaya yang mahal.
+
+**Solusi**  
+Menggunakan API Composition. API Composition merupakan pattern yang membuat client tidak harus menghubungi banyak service secara langsung, melainkan melalui request ke API Composer. API Composer ditempatkan di depan microservices.  
+
+**-- API Composition**  
+API Composition diterapkan di order service dikarenakan pada order service sering dilakukan query untuk mencari pemesanan yang biasanya menggunakan findOrder() query. findOrder() query akan mengembalikan OrderDetails yang berisi order id, nama cafe, delivery status, estimasi kedatangan, dan payment status. Untuk mendapat data tersebut, tentunya kita perlu data-data dari berbagai service yang berbeda. Maka dari itu, API composition merupakan pattern yang tepat untuk order service. Nantinya, akan ditempatkan sebuah composer di depan service-service yang memiliki data yang dibutuhkan. Client hanya perlu melakukan request kepada composer tersebut dan nantinya composer tersebut lah yang akan mengambil data dari berbagai service, menggabungkannya, dan mengembalikannya ke client.
 
