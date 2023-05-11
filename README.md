@@ -63,6 +63,9 @@ Bertanggung jawab untuk mengelola dan menyediakan daftar produk-produk yang diju
 - Cafe Service
 - Accounting Service
 
+## Business Capabilities and Service Mapping  
+![Untitled Diagram drawio](https://github.com/syahdaafia/HasilETSPPLBO2023/assets/76998317/048ebc2b-1120-4fce-8f97-4adaaf2be069)  
+
 ## Service Architecture  
 <img width="431" alt="image" src="https://github.com/syahdaafia/HasilETSPPLBO2023/assets/76998317/ebb5dcfc-859f-470d-8603-e0c7914eea57">  
 
